@@ -1,0 +1,305 @@
+/* General */
+
+body {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+hr {
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+ul {
+  display: block;
+  list-style-type: none;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 1em;
+  -webkit-padding-end: 1em;
+}
+
+
+/* Header */
+
+.header-title {
+  text-align: center;
+  padding: 1em;
+  color: #878787;
+}
+
+/* Main Content */
+
+.main-content {
+  background-color: white;
+  height: auto;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.2);
+  box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.2);
+}
+
+.title-content {
+  padding: 2em 0em;
+  color: #878787;
+}
+
+.content-item {
+  margin-bottom: 1em;
+}
+
+/*.delete-icon {*/
+  /*margin-left: auto;*/
+  /*display: none !important;*/
+  /*cursor: pointer;*/
+  /*transition: all 1s;*/
+/*}*/
+
+/*.delete-icon:hover {*/
+  /*color: red;*/
+/*}*/
+
+.show {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.form-control::-webkit-input-placeholder { color: #d7d7d7; }  /* WebKit, Blink, Edge */
+.form-control:-moz-placeholder { color: #d7d7d7; }  /* Mozilla Firefox 4 to 18 */
+.form-control::-moz-placeholder { color: #d7d7d7; }  /* Mozilla Firefox 19+ */
+.form-control:-ms-input-placeholder { color: #d7d7d7; }  /* Internet Explorer 10-11 */
+.form-control::-ms-input-placeholder { color: #d7d7d7; }  /* Microsoft Edge */
+
+
+.input-wrapper {
+  margin-top: 50px;
+}
+
+.text-color{
+  color: #6c757d;
+}
+.switch {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {display:none;}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+/* Customize the label (the container) */
+.containerR {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.containerR input {
+  position: absolute;
+  opacity: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.containerR:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.containerR input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.containerR input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.containerR .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+
+
+.item-list {
+  background-color: white;
+  height: auto;
+  padding: 1.5em;
+  margin-bottom: 2em;
+  -webkit-box-shadow: 0px 0px 11px 0px rgba(50, 50, 50, 0.2);
+  -moz-box-shadow:    0px 0px 11px 0px rgba(50, 50, 50, 0.2);
+  box-shadow:         0px 0px 11px 0px rgba(50, 50, 50, 0.2);
+  border-left: 5px solid transparent;
+}
+
+.delete-icon {
+  font-size: 35px;
+  margin-left: auto;
+  cursor: pointer;
+  opacity: 0;
+  transition: all 0.2s;
+}
+
+.done {
+  color: rgb(204, 204, 204);
+  text-decoration: line-through;
+}
+
+.test:hover .delete-icon {
+  color: red;
+  opacity: 1;
+}
+
+/* Customize the label (the container) */
+.containerCb {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 22px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.containerCb input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmarkCb {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.containerCb:hover input ~ .checkmarkCb {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.containerCb input:checked ~ .checkmarkCb {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmarkCb:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.containerCb input:checked ~ .checkmarkCb:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.containerCb .checkmarkCb:after {
+  left: 9px;
+  top: 5px;
+  width: 7px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.input-group-btn>.btn {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
